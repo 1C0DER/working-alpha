@@ -1,0 +1,74 @@
+<!Doctype html>
+
+  <head>
+    <%- include('../partials/head')%>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <%- include('../partials/header')%>
+    </header>
+
+    <div class="result">
+
+    </div>
+
+    <!-- The form box for the booking of flights -->
+    <div class="booking-form-box">
+      <form action="/flights" method="post">
+        <div class="radio-btn">
+          <input type="radio" class="btn" id="roundTrip" name="check" value="roundtrip"><span>Round trip</span>
+          <input type="radio" class="btn" id="oneWay" name="check" value="oneway"><span>One way </span>
+          <input type="radio" class="btn" id="multiCity" name="check" value="multicity" ><span>Multi city</span>
+        </div>
+
+        <label>Flying From</label>
+        <input type="text" class="form-control" id="flying-from" placeholder="Departure Airport">
+        <label>Flying To</label>
+        <input type="text" class="form-control" id="flying-to" placeholder="Destination Airport">
+
+        <div class="input-grp" id="depart">
+          <label>Departing</label>
+          <input type="date" class="form-control select-date" id="departure-date">
+        </div>
+
+        <div class="input-grp" id="return">
+          <label id="returning">Returning</label>
+          <input type="date" class="form-control select-date" id="return-date">
+        </div>  
+            
+        <div class="input-grp">
+          <label>Adult</label>
+          <input type="number" class="form-control" value="1" id="adult">
+        </div>        
+  
+        <div class="input-grp">
+          <label>Children</label>
+          <input type="number" class="form-control" value="0" id=" children">
+        </div>
+        
+        <div class="input-grp">
+          <label>Travel Class</label>
+          <select class="custom-select" id="cabin">
+            <option value="economy " id="economy-class">Economy</option>
+            <option value="business" id="business-class">Business</option>
+            <option value="first" id="first-class">First</option>
+            <option value="premium-class" id="premium-class">Premium Class</option>          
+          </select>
+        </div>        
+      
+        <!-- buttons to check a flight or add another  -->
+        <div class="input-grp">
+          <button type="button" class="btn btn-primary flight" id="check-flight">Check Flight</button>
+          <button type="button" class="btn btn-primary flight" id="addFlight" > Add Flight</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+     <%- include('../partials/footer')%>
+    </footer>
+  </body>
+</html>

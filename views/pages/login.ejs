@@ -1,0 +1,39 @@
+<!Doctype html>
+ <head>
+    <%- include('../partials/head')%>
+  </head>
+
+  
+  <body>
+    <header>
+      <%- include('../partials/header')%>
+    </header>
+     
+    <!-- log in container -->
+    <div class="container">
+      <div class="heading">Log In</div>
+      <form action="/login" method="post">
+        <div class="card-details">
+          <div class="card-box">
+            <span class="details">Email</span>
+            <input type="phone" placeholder="Enter your email">
+          </div>
+          <div class="card-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password">
+          </div>
+          <div class="button">
+            <input type="submit" value="login">
+          </div>
+       </div>
+     </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+     <%- include('../partials/footer')%>
+    </footer>
+  </body>
+</html>
+       
+        

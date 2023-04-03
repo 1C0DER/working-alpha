@@ -1,0 +1,470 @@
+@import url('http://googleapis.com/css2?family=Pacifico&display=swap');
+
+/* html */
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.dropdown-menu{
+    background-color: rgb(74, 93, 177);
+}
+
+a:hover{
+    color: rgb(74, 93, 177);
+}
+ul{
+    list-style: none;
+}
+
+/* navigation bar */
+.navbar{
+    background-color: rgb(74, 93, 177);
+    padding: 3rem 2rem;
+    height: 0rem;
+    min-height: 12vh;
+}
+
+.navbar .navbar-brand a {
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar-brand{
+    font-family:cursive;
+    font-size: 1.5rem;
+    color: rgb(74, 93, 177);
+}
+
+.navbar-toggler{
+    background:rgb(74, 93, 177);
+    border: none;
+    padding: 10px 6px;
+    outline: none;
+}
+
+.navbar-toggler span{
+    display: block;
+    width: 22px;
+    height: 2px;
+    border: 1px;
+    background: rgb(74, 93, 177);
+}
+.navbar-toggler span + span {
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px;
+}
+.navbar-toggler span + span +span {
+    width: 10px;
+    margin-left: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 2rem 1.2rem;
+    font-size: 1.4rem;
+    position: relative;   
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    border-top: 4px solid rgb(74, 93, 177);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:active {
+    border-top: 4px solid rgb(74, 93, 177);
+    color: rgb(74, 93, 177);
+}
+
+.navbar-nav .btn{
+    background-color: rgb(74, 93, 177);
+    color: black;
+    border-radius: 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.2rem;
+    margin-top: 1px;
+}
+
+.navbar-nav .btn:hover{
+    background-color: rgb(74, 93, 177);
+}
+
+/* container */
+.container-fluid {
+    background-color: white;
+    width: 100%;
+}
+
+
+/***********************************************************************/
+/* The following css codes are for the flight html files */
+
+@import "compass/css3";
+@import "compass/reset";
+
+/* Body */
+body{
+    background-size: cover;
+    background-position: center;
+}
+/* 
+
+
+/* Booking form design properties */
+.booking-form-box {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid grey;
+    margin: 10px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #d3765e, #2b5caa);
+    box-shadow: 2px 2px 4px gray;
+}
+
+.booking-form-box form{
+    width: 100%;
+}
+
+/* changing the input to capital letters since iata codes are always meant to be entered in capital letters*/
+#flying-from{
+    text-transform: uppercase;
+}
+
+#flying-to{
+    text-transform: uppercase;
+}
+
+.booking-form-box label{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: white;
+}
+
+input::placeholder{
+    color: grey !important;
+}
+
+.booking-form-box form .input-grp{
+    align-items: center;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.select-date::-webkit-calender-picker-indicator{
+    background: transparent !important;
+}
+
+.booking-form-box form .input-grp.custom-select{
+    color: blue ;
+    position: relative;
+    font-size: 12px !important;
+    border: 2px solid blue !important;
+    width: 100%;
+    height: auto;
+}
+
+.flight{
+    width: 70% !important;
+    padding: 5px !important;
+    font-size: 12px;
+    border: 1px solid grey !important;
+    background:grey !important;
+    
+}
+.flight:hover{
+    background: blue !important;
+    color: green !important;
+    transition: 0.5s;
+
+}
+
+#addFlight{
+    margin-top: 5px;
+}
+
+/***************************************************************************/
+/* The following css files are for the register html files */
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background-color: slategrey;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px grey;
+}
+
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: brown;
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper form{
+    width: 100%;
+
+}
+
+.wrapper .form .input_field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .form .input_field label{
+    width: 200px;
+    color: blue;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.wrapper .form .input_field .input,
+.wrapper .form .input_field .textarea{
+    width: 100%;
+    outline: none;
+    margin: 10px;
+    border: 1px solid green;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wrapper .form .input_field .textarea{
+    resize: none;
+    height: 125px;
+
+}
+
+.wrapper .form .input_field .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.wrapper .form .input_field .custom_select select{
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid brown;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: grey transparent transparent transparent;
+    pointer-events: none;
+}
+
+.wrapper .form .input_field .input:focus,
+.wrapper .form .input_field .textarea:focus,
+.wrapper .form .input_field .select:focus{
+    border: 1px solid skyblue;
+}
+
+.wrapper .form .input_field p{
+    font-size: 14px;
+    color: beige;
+}
+
+.wrapper .form .input_field .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.wrapper .form .input_field .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    display: block;
+    position: relative;
+}
+
+.wrapper .form .input_field .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent white white;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ .checkmark{
+    background: purple;
+}
+
+.wrapper .form .input_field .check input[type="checkbox"]:checked ~ 
+.checkmark:before{
+    display: block;
+
+}
+
+.wrapper .form .input_field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.wrapper .form .input_field:last-child{
+    margin-bottom: 0;
+}
+
+.wrapper .form .input_field .btn:hover{
+    background-color: aliceblue;
+}
+
+@media (max-width: 420px){
+    .wrapper .form .input_field{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .wrapper .form .input_field label{
+        margin-bottom: 5px;
+    }
+
+    .wrapper .form .input_field.terms{
+        flex-direction: row;
+    }
+}
+
+
+/********************************************************************/
+/* The css files here are for the login html files */
+
+
+.container{
+    max-width: 70% !important;
+    width: 60%;
+    margin: 20px, auto;
+    margin-top: 60px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #c3d8e8);
+    text-align: center;
+}
+
+ .container .heading{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 100% !important;
+}
+
+form .card-details .card-box{
+    justify-content: center;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.card-details .card-box input{
+    margin-top: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    height: 35px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 10px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+form .button{
+    text-align: center;
+}
+
+form .button input{
+    margin-top: 30px;
+    max-height: 300px;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+
+.details{
+    color: black;
+}
+form .button input:hover{
+    background-color: transparent;
+}
+
+@media (max-width:584px) {
+    .container{
+        max-width: 100%;
+    }
+    form .card-details.card-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .circal-form .category{
+        width: 100%;
+    }
+    .container form .card-details{
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .card-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+/******************************************************************************8/
+/* The styles below are for the css properties of the footer page */
+.footercontainer{
+    margin-top: 10px;
+}
+
+.footerheader{
+    font-size: 20px;
+    font-family: cursive;
+    color:black;
+}
+.footerpage{
+    font-size: 15px;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: gray;
+}
